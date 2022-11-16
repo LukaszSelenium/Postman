@@ -111,8 +111,9 @@
 						"exec": [
 							"pm.test(\"Check if data exists\", function() {\r",
 							"    pm.expect(pm.response.json()).to.be.an('object');\r",
-							"    pm.expect(pm.response.json()).to.have.property('data');\r",
-							"});"
+							"    //pm.expect(pm.response.json()).to.have.property('data');\r",
+							"});\r",
+							""
 						],
 						"type": "text/javascript"
 					}
