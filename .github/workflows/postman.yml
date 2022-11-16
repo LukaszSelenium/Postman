@@ -29,7 +29,8 @@ jobs:
         uses: matt-ball/newman-action@master
         with:
           collection: RegresAPI.postman_collection.json
-          reporters: '["newman-reporter-htmlextra"]'
+          reporters: '["emojitrain"]'
+	  #reporter: {emojitrain:{export: './testresults/test.html'}}
             
       # Upload the contents of Test Results directory to workspace
       - name: Output the run Details
