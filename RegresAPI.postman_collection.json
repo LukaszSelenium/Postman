@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "0394457b-2da4-41c1-9ad1-588e9d0048df",
-		"name": "Regres API",
+		"name": "Reqres API",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "14994904"
 	},
@@ -104,6 +104,20 @@
 		},
 		{
 			"name": "Get user",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Check if data exists\", function() {\r",
+							"    pm.expect(pm.response.json()).to.be.an('object');\r",
+							"    pm.expect(pm.response.json()).to.have.property('data');\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -134,7 +148,7 @@
 					"variable": [
 						{
 							"key": "id",
-							"value": "4"
+							"value": "44"
 						}
 					]
 				}
