@@ -157,7 +157,7 @@
 							"    pm.expect(pm.response.json()).to.have.property('token')\r",
 							"});\r",
 							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(201);\r",
+							"    pm.response.to.have.status(200);\r",
 							"});"
 						],
 						"type": "text/javascript"
